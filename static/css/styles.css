@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(#a0d2eb, #e5eaf5);
+    background-size: cover;
+}
+#register-button{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    background-color: aquamarine;
+    padding: 5px 5px 5px 5px;
+}
+#register-button:hover{
+    background-color: aqua;
+    opacity: 70%;
+}
+
+#header {
+    text-align: center;
+    height: 100px;
+}
+
+#login {
+    padding-top: 5%;
+    text-align: center;
+}
+
+#register-button{
+    margin-left: 120px;
+}
+
+#login-button{
+    margin-left: 5px;
+}

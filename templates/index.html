@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+</head>
+<body>
+    <div id="header">
+        <h1>Welcome to the sample site!</h1>
+        <a id="register-button" href="/register-page">Register</a>
+        <hr>
+    </div>
+    <div id="login">
+        <form>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <hr>
+            <button id="login-button" type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>
