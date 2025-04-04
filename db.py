@@ -21,3 +21,21 @@ def CreateAcc(username, password):
     cur.close()
     conn.close()
 
+def CheckCredentials(username, password):
+    conn = psycopg2.connect(dbname=db_name, user=db_user, password=db_pw, host=db_host)
+    cur = conn.cursor()
+    query = """
+        SELECT EXISTS (
+            SELECT 1
+            FROM public.registeredaccounts
+            WHERE (username = %s AND password = %s)
+        );
+    """
+    cur.execute(query, (username, password))
+    conn.commit()
+    is_registered = cur.fetchone()
+    is_correct = is_registered[0]
+    cur.close()
+    conn.close()
+    return is_correct
+

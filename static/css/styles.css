@@ -2,16 +2,21 @@ body{
     background-image: linear-gradient(#a0d2eb, #e5eaf5);
     background-size: cover;
 }
+#home-page{
+    text-align: center;
+}
 #register-button{
+    font-size: 12px;
+    font-family: 'Lucida Grande', 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: black;
-    border: 2px solid black;
-    background-color: aquamarine;
-    padding: 5px 5px 5px 5px;
+    border: 1px solid #72777b;
+    background-color: #eeeeed;
+    padding: 3px 5px 3px 5px;
+    border-radius: 10%;
 }
 #register-button:hover{
-    background-color: aqua;
-    opacity: 70%;
+    background-color: #d3d3d3;
 }
 
 #header {
